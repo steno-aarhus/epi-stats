@@ -1,5 +1,5 @@
 ---
-Title: "Testing adding text to the repository"
+title: "Testing adding text to the repository"
 ---
 
 ## This is a test
