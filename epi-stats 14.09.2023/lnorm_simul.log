@@ -1,0 +1,125 @@
+-------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  D:\stovring\SDCA\EpiSpace_EpiStats\Transformations\lnorm_simul.log
+  log type:  text
+ opened on:  14 Sep 2023, 12:30:50
+
+. 
+. clear
+
+. 
+. **********************************************************************
+. * Creating a simulated dataset to analyze
+. 
+. set obs 342
+Number of observations (_N) was 0, now 342.
+
+. gen bmi20 = (runiform() - .5) * 16 + 27 - 20
+
+. la var bmi20 "BMI - 20"
+
+. gen group = runiform() < .5
+
+. 
+. gen hba1c = exp(.07 * bmi + .2 * (1 - group) + rnormal(.9, 0.2)) 
+
+. 
+. sa lnorm_data_ex, replace
+file lnorm_data_ex.dta saved
+
+. 
+. gen ln_hba1c = ln(hba1c)
+
+. 
+. 
+. **********************************************************************
+. * Analysis of dataset
+. 
+. regress ln_hba1c b0.group bmi
+
+      Source |       SS           df       MS      Number of obs   =       342
+-------------+----------------------------------   F(2, 339)       =    472.07
+       Model |  38.1824433         2  19.0912216   Prob > F        =    0.0000
+    Residual |  13.7098077       339   .04044191   R-squared       =    0.7358
+-------------+----------------------------------   Adj R-squared   =    0.7342
+       Total |  51.8922509       341  .152176689   Root MSE        =     .2011
+
+------------------------------------------------------------------------------
+    ln_hba1c | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+     1.group |  -.2193906   .0217735   -10.08   0.000    -.2622187   -.1765625
+       bmi20 |   .0700393   .0024052    29.12   0.000     .0653084    .0747702
+       _cons |   1.108013    .022921    48.34   0.000     1.062928    1.153098
+------------------------------------------------------------------------------
+
+. 
+. regress ln_hba1c b0.group bmi, eform("MedRat")
+
+      Source |       SS           df       MS      Number of obs   =       342
+-------------+----------------------------------   F(2, 339)       =    472.07
+       Model |  38.1824433         2  19.0912216   Prob > F        =    0.0000
+    Residual |  13.7098077       339   .04044191   R-squared       =    0.7358
+-------------+----------------------------------   Adj R-squared   =    0.7342
+       Total |  51.8922509       341  .152176689   Root MSE        =     .2011
+
+------------------------------------------------------------------------------
+    ln_hba1c |     MedRat   Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+     1.group |    .803008   .0174843   -10.08   0.000     .7693428    .8381464
+       bmi20 |    1.07255   .0025797    29.12   0.000     1.067488    1.077637
+       _cons |   3.028335   .0694126    48.34   0.000     2.894833    3.167993
+------------------------------------------------------------------------------
+
+. 
+. predict pred_lnhba1c, xb
+
+. predict resid_lnhba1c, resid
+
+. 
+. qnorm resid_lnhba1c
+
+. graph export qq_lnhba1c.png, replace width(1400)
+(file qq_lnhba1c.png not found)
+file qq_lnhba1c.png saved as PNG format
+
+. 
+. separate pred_lnhba1c, by(group)
+
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+-------------------------------------------------------------------------------------------------------------
+pred_lnhba1c0   float   %9.0g                 pred_lnhba1c, group == 0
+pred_lnhba1c1   float   %9.0g                 pred_lnhba1c, group == 1
+
+. twoway (scatter ln_hba1c bmi20, mlabel(group) mlabp(0) msy(i)) ///
+>         (line pred_lnhba1c0 pred_lnhba1c1 bmi20, c(L L))
+
+. graph export pred_lnhba1c.png, replace width(1400)
+file pred_lnhba1c.png saved as PNG format
+
+.         
+. gen pred_hba1c = exp(pred_lnhba1c)
+
+. separate pred_hba1c, by(group)
+
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+-------------------------------------------------------------------------------------------------------------
+pred_hba1c0     float   %9.0g                 pred_hba1c, group == 0
+pred_hba1c1     float   %9.0g                 pred_hba1c, group == 1
+
+. sort group bmi20
+
+. twoway (scatter hba1c bmi20, mlabel(group) mlabp(0) msy(i)) ///
+>         (line pred_hba1c0 pred_hba1c1 bmi20, c(L L)), ylab(0(2)12)
+
+. graph export pred_hba1c.png, replace width(1400)
+file pred_hba1c.png saved as PNG format
+
+. 
+. log close
+      name:  <unnamed>
+       log:  D:\stovring\SDCA\EpiSpace_EpiStats\Transformations\lnorm_simul.log
+  log type:  text
+ closed on:  14 Sep 2023, 12:30:53
+-------------------------------------------------------------------------------------------------------------
