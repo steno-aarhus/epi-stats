@@ -1,9 +1,0 @@
----
-title: "Testing adding text to the repository"
----
-
-## This is a test
-This text is just to test things.
-
-# This is a second header
-
