@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-
+!*.log
+.Rbuildignore
 /.quarto/
 _site
