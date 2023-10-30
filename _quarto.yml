@@ -1,0 +1,38 @@
+project:
+  type: website
+
+website:
+  title: "SDCA Epi Stats"
+  site-url: "https://steno-aarhus.github.io/epi-stats/"
+  repo-url: "https://github.com/steno-aarhus/epi-stats"
+  repo-branch: main
+  repo-actions: [edit, issue, source]
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    pinned: true
+    tools:
+      - icon: github
+        href: "https://github.com/steno-aarhus/epi-stats"
+  page-footer:
+    center:
+      - text: "License: CC BY 4.0"
+        href: LICENSE.md
+
+reference-location: margin
+title-block-banner: images/banner.png
+
+format:
+  html:
+    toc: true
+    df-print: tibble
+    code-overflow: scroll
+    from: markdown+emoji
+    code-link: true
+    theme: litera
+
+editor_options:
+  markdown:
+    wrap: 72
+    canonical: true
