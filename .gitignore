@@ -4,3 +4,5 @@
 .Ruserdata
 !*.log
 .Rbuildignore
+/.quarto/
+_site
