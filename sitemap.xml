@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/2023-09-28/transportability.html</loc>
-    <lastmod>2023-10-30T14:39:10.286Z</lastmod>
-  </url>
-  <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/2023-10-12/target-trials-and-cc-studies.html</loc>
-    <lastmod>2023-10-30T14:39:09.650Z</lastmod>
-  </url>
-  <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/2023-11-09/selection-bias.html</loc>
-    <lastmod>2023-10-30T14:39:09.086Z</lastmod>
-  </url>
-  <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/2023-10-26/dags.html</loc>
-    <lastmod>2023-10-30T14:39:08.922Z</lastmod>
-  </url>
-  <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/LICENSE.html</loc>
-    <lastmod>2023-10-30T14:39:09.490Z</lastmod>
+    <loc>https://steno-aarhus.github.io/epi-stats/2023-12-07/incidence-prevalence-mortality.html</loc>
+    <lastmod>2023-11-12T19:18:23.118Z</lastmod>
   </url>
   <url>
     <loc>https://steno-aarhus.github.io/epi-stats/2023-11-23/immortal_t_bias.html</loc>
-    <lastmod>2023-10-30T14:39:09.802Z</lastmod>
+    <lastmod>2023-11-12T19:18:22.574Z</lastmod>
   </url>
   <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/2023-12-07/incidence-prevalence-mortality.html</loc>
-    <lastmod>2023-10-30T14:39:10.134Z</lastmod>
+    <loc>https://steno-aarhus.github.io/epi-stats/2023-11-09/selection-bias.html</loc>
+    <lastmod>2023-11-12T19:18:21.022Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/2023-09-28/transportability.html</loc>
+    <lastmod>2023-11-12T19:18:20.406Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/LICENSE.html</loc>
+    <lastmod>2023-11-12T19:18:21.746Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/2023-10-12/target-trials-and-cc-studies.html</loc>
+    <lastmod>2023-11-12T19:18:22.306Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/2023-10-26/dags.html</loc>
+    <lastmod>2023-11-12T19:18:22.846Z</lastmod>
   </url>
 </urlset>
