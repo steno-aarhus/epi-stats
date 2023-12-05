@@ -1,0 +1,7 @@
+---
+title: "Introduction to GitHub"
+description: "A gentle introduction to using the Steno Aarhus GitHub."
+date: 2023-05-25
+---
+
+Available [here](slides.pdf).
