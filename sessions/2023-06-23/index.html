@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-06-23">
+<meta name="description" content="Discussing how to do effect modification analysis.">
 
-<title>SDCA Epi Stats – target-trials-and-cc-studies</title>
+<title>SDCA Epi Stats - Effect modification in epidemiologic studies – a template for analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,24 +22,43 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">SDCA Epi Stats</span>
     </a>
   </div>
@@ -87,7 +108,34 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Effect modification in epidemiologic studies – a template for analysis</h1>
+                  <div>
+        <div class="description">
+          Discussing how to do effect modification analysis.
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 23, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -99,9 +147,26 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<p>Files from session:</p>
+<ul>
+<li><a href="slides.pdf">Slides</a></li>
+<li>Stata <a href="code.do">code</a></li>
+<li>Stata <a href="output.log">output</a></li>
+<li>Data, as <a href="partic_data_dist.dta"><code>.dta</code></a> or <a href="partic_data_dist.xlsx"><code>.xlsx</code></a></li>
+</ul>
+<p>Articles discussed were <span class="citation" data-cites="Knol2012">(<a href="#ref-Knol2012" role="doc-biblioref">Knol and VanderWeele 2012</a>)</span> and <span class="citation" data-cites="Jensen2013">(<a href="#ref-Jensen2013" role="doc-biblioref">Jensen et al. 2013</a>)</span>.</p>
 
 
-</main> <!-- /main -->
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Jensen2013" class="csl-entry" role="listitem">
+Jensen, L.F, A.F Pedersen, B. Andersen, M. Fenger-Grøn, and P. Vedsted. 2013. <span>“Distance to Screening Site and Non-Participation in Screening for Breast Cancer: A Population-Based Study.”</span> <a href="https://doi.org/10.1093/pubmed/fdt068">https://doi.org/10.1093/pubmed/fdt068</a>.
+</div>
+<div id="ref-Knol2012" class="csl-entry" role="listitem">
+Knol, Mirjam, and Tyler VanderWeele. 2012. <span>“Recommendations for Presenting Analyses of Effect Modification and Interaction.”</span> <a href="https://doi.org/10.1093/ije/dyr218">https://doi.org/10.1093/ije/dyr218</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -344,10 +409,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../LICENSE.html">License: CC BY 4.0</a>
+    <a class="nav-link" href="../../LICENSE.html">License: CC BY 4.0</a>
   </li>  
 </ul>
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/steno-aarhus/epi-stats/edit/main/2023-10-12/target-trials-and-cc-studies.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/steno-aarhus/epi-stats/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/steno-aarhus/epi-stats/blob/main/2023-10-12/target-trials-and-cc-studies.md" class="toc-action">View source</a></p></div></div></div>
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/steno-aarhus/epi-stats/edit/main/sessions/2023-06-23/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/steno-aarhus/epi-stats/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/steno-aarhus/epi-stats/blob/main/sessions/2023-06-23/index.qmd" class="toc-action">View source</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

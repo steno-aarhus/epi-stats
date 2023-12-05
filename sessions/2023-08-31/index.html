@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-08-31">
+<meta name="description" content="Which to choose? A discussion on statistical methods to use.">
 
-<title>SDCA Epi Stats – incidence-prevalence-mortality</title>
+<title>SDCA Epi Stats - Analysis of change from baseline and/or ANCOVA?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,24 +22,43 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">SDCA Epi Stats</span>
     </a>
   </div>
@@ -87,7 +108,34 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Analysis of change from baseline and/or ANCOVA?</h1>
+                  <div>
+        <div class="description">
+          Which to choose? A discussion on statistical methods to use.
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 31, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -99,9 +147,25 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<p>Files from session:</p>
+<ul>
+<li><a href="slides.pdf">Slides</a></li>
+<li>Stata <a href="code.do">code</a></li>
+<li>Stata <a href="output.log">output</a></li>
+</ul>
+<p>Articles discussed were <span class="citation" data-cites="Wright2020">(<a href="#ref-Wright2020" role="doc-biblioref">Wright 2020</a>)</span> and <span class="citation" data-cites="Senn2006">(<a href="#ref-Senn2006" role="doc-biblioref">Senn 2006</a>)</span>.</p>
 
 
-</main> <!-- /main -->
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Senn2006" class="csl-entry" role="listitem">
+Senn, Stephen. 2006. <span>“Change from Baseline and Analysis of Covariance Revisited.”</span> <a href="https://doi.org/10.1002/sim.2682">https://doi.org/10.1002/sim.2682</a>.
+</div>
+<div id="ref-Wright2020" class="csl-entry" role="listitem">
+Wright, Daniel B. 2020. <span>“Allocation to Groups: Examples of Lord’s Paradox.”</span> <a href="https://doi.org/10.1111/bjep.12300">https://doi.org/10.1111/bjep.12300</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -344,10 +408,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../LICENSE.html">License: CC BY 4.0</a>
+    <a class="nav-link" href="../../LICENSE.html">License: CC BY 4.0</a>
   </li>  
 </ul>
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/steno-aarhus/epi-stats/edit/main/2023-12-07/incidence-prevalence-mortality.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/steno-aarhus/epi-stats/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/steno-aarhus/epi-stats/blob/main/2023-12-07/incidence-prevalence-mortality.md" class="toc-action">View source</a></p></div></div></div>
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/steno-aarhus/epi-stats/edit/main/sessions/2023-08-31/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/steno-aarhus/epi-stats/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/steno-aarhus/epi-stats/blob/main/sessions/2023-08-31/index.qmd" class="toc-action">View source</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

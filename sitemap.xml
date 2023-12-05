@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/2023-12-07/incidence-prevalence-mortality.html</loc>
-    <lastmod>2023-11-12T19:18:23.118Z</lastmod>
-  </url>
-  <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/2023-11-23/immortal_t_bias.html</loc>
-    <lastmod>2023-11-12T19:18:22.574Z</lastmod>
-  </url>
-  <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/2023-11-09/selection-bias.html</loc>
-    <lastmod>2023-11-12T19:18:21.022Z</lastmod>
-  </url>
-  <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/2023-09-28/transportability.html</loc>
-    <lastmod>2023-11-12T19:18:20.406Z</lastmod>
-  </url>
-  <url>
     <loc>https://steno-aarhus.github.io/epi-stats/LICENSE.html</loc>
-    <lastmod>2023-11-12T19:18:21.746Z</lastmod>
+    <lastmod>2023-12-05T19:09:15.005Z</lastmod>
   </url>
   <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/2023-10-12/target-trials-and-cc-studies.html</loc>
-    <lastmod>2023-11-12T19:18:22.306Z</lastmod>
+    <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-08-31/index.html</loc>
+    <lastmod>2023-12-05T19:09:14.201Z</lastmod>
   </url>
   <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/2023-10-26/dags.html</loc>
-    <lastmod>2023-11-12T19:18:22.846Z</lastmod>
+    <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-06-23/index.html</loc>
+    <lastmod>2023-12-05T19:09:13.681Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-05-25/index.html</loc>
+    <lastmod>2023-12-05T19:09:13.145Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/index.html</loc>
+    <lastmod>2023-12-05T19:09:11.644Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-09-14/index.html</loc>
+    <lastmod>2023-12-05T19:09:14.465Z</lastmod>
   </url>
 </urlset>
