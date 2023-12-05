@@ -1,4 +1,10 @@
 ---
 title: Steno Aarhus Epidemiology and Statistics
+listing:
+  contents: sessions
+  sort: "date desc"
+  fields:
+    - date
+    - title
 ---
 

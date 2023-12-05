@@ -1,0 +1,31 @@
+---
+title: "Box Cox transformation."
+description: "A discussion and reading of articles on the Box-Cox transformation."
+date: "2023-09-14"
+references:
+- type: article-journal
+  id: Cox1964
+  author:
+  - family: Box
+    given: G. E. P.
+  - family: Cox
+    given: D. R.
+  issued: 1964
+  title: 'An Analysis of Transformations'
+  URL: "https://www.jstor.org/stable/2984418"
+- type: article-journal
+  id: Atkinson2021
+  author:
+  - family: Atkinson
+    given: Anthony C.
+  - family: Riani
+    given: Marco
+  - family: Corbellini
+    given: Aldo
+  issued: 2021
+  title: 'The Box–Cox Transformation: Review and Extensions'
+  DOI: 10.1214/20-STS778
+---
+
+
+Articles discussed were [@Cox1964] and [@Atkinson2021].

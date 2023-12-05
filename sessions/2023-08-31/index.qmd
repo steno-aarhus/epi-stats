@@ -1,0 +1,30 @@
+---
+title: "Analysis of change from baseline and/or ANCOVA?"
+description: "Which to choose? A discussion on statistical methods to use."
+date: "2023-08-31"
+references:
+- type: article-journal
+  id: Wright2020
+  author:
+  - family: Wright
+    given: Daniel B.
+  issued: 2020
+  title: "Allocation to groups: Examples of Lord's paradox"
+  DOI: 10.1111/bjep.12300
+- type: article-journal
+  id: Senn2006
+  author:
+  - family: Senn
+    given: Stephen
+  issued: 2006
+  title: "Change from baseline and analysis of covariance revisited"
+  DOI: 10.1002/sim.2682
+---
+
+Files from session:
+
+- [Slides](slides.pdf)
+- Stata [code](code.do)
+- Stata [output](output.log)
+
+Articles discussed were [@Wright2020] and [@Senn2006].

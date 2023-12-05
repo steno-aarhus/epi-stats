@@ -1,0 +1,18 @@
+---
+draft: true
+title: "Immortal time bias"
+description: ""
+date: "2023-11-23"
+references:
+- type: article-journal
+  id: WatsonCrick1953
+  author:
+  - family: Watson
+    given: J. D.
+  - family: Crick
+    given: F. H. C.
+  issued: 1953
+  title: 'Molecular structure of nucleic acids: a structure for
+    deoxyribose nucleic acid'
+  DOI: 10.1038/171737a0
+---

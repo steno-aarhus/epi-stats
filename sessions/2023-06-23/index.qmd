@@ -1,0 +1,42 @@
+---
+title: "Effect modification in epidemiologic studies – a template for analysis"
+description: "Discussing how to do effect modification analysis."
+date: "2023-06-23"
+references:
+- type: article-journal
+  id: Knol2012
+  author:
+  - family: Knol
+    given: Mirjam
+  - family: VanderWeele
+    given: Tyler
+  issued: 2012
+  title: 'Recommendations for presenting analyses of effect modification and interaction'
+  DOI: 10.1093/ije/dyr218
+- type: article-journal
+  id: Jensen2013
+  author:
+  - family: Jensen
+    given: L.F
+  - family: Pedersen
+    given: A.F
+  - family: Andersen
+    given: B.
+  - family: Fenger-Grøn
+    given: M.
+  - family: Vedsted
+    given: P.
+  issued: 2013
+  title: 'Distance to screening site and non-participation in screening for breast cancer: a population-based study'
+  DOI: 10.1093/pubmed/fdt068
+---
+
+
+Files from session:
+
+- [Slides](slides.pdf)
+- Stata [code](code.do)
+- Stata [output](output.log)
+- Data, as [`.dta`](partic_data_dist.dta) or [`.xlsx`](partic_data_dist.xlsx)
+
+Articles discussed were [@Knol2012] and [@Jensen2013].
