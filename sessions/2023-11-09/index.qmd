@@ -5,14 +5,16 @@ description: ""
 date: "2023-11-09"
 references:
 - type: article-journal
-  id: WatsonCrick1953
+  id: Banack2019
   author:
-  - family: Watson
-    given: J. D.
-  - family: Crick
-    given: F. H. C.
-  issued: 1953
-  title: 'Molecular structure of nucleic acids: a structure for
-    deoxyribose nucleic acid'
-  DOI: 10.1038/171737a0
+  - family: Banack
+    given: Hailey R.
+  - family: Kaufman
+    given: Jay S.
+  issued: 2019
+  title: 'Investigating and Remediating Selection Bias in Geriatrics Research: The Selection Bias Toolkit'
+  DOI: 10.1111/jgs.16022
 ---
+
+Investigating and Remediating Selection Bias in Geriatrics Research: The Selection Bias Toolkit
+  PhD,   PhD,
