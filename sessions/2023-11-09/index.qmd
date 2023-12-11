@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Selection bias"
-description: ""
+description: "When potential participants in a study do not participate, estimates of interest may become biased"
 date: "2023-11-09"
 references:
 - type: article-journal
@@ -13,8 +13,16 @@ references:
     given: Jay S.
   issued: 2019
   title: 'Investigating and Remediating Selection Bias in Geriatrics Research: The Selection Bias Toolkit'
-  DOI: 10.1111/jgs.16022
+  DOI: 10.1111/jgs.16022 
+- type: article-journal
+  id: Smith2020
+  author:
+  - family: Smith
+    given: Louisa
+  title: 'Selection Mechanisms and Their Consequences: Understanding and Addressing Selection Bias'
+  DOI: 10.1007/s40471-020-00241-6
 ---
 
-Investigating and Remediating Selection Bias in Geriatrics Research: The Selection Bias Toolkit
-  PhD,   PhD,
+Files from session:
+
+- [Slides](slides.pdf)
