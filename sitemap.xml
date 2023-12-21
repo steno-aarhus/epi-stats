@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://steno-aarhus.github.io/epi-stats/LICENSE.html</loc>
-    <lastmod>2023-12-05T19:09:15.005Z</lastmod>
-  </url>
-  <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-08-31/index.html</loc>
-    <lastmod>2023-12-05T19:09:14.201Z</lastmod>
-  </url>
-  <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-06-23/index.html</loc>
-    <lastmod>2023-12-05T19:09:13.681Z</lastmod>
-  </url>
-  <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-05-25/index.html</loc>
-    <lastmod>2023-12-05T19:09:13.145Z</lastmod>
-  </url>
-  <url>
-    <loc>https://steno-aarhus.github.io/epi-stats/index.html</loc>
-    <lastmod>2023-12-05T19:09:11.644Z</lastmod>
+    <lastmod>2023-12-21T10:12:18.973Z</lastmod>
   </url>
   <url>
     <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-09-14/index.html</loc>
-    <lastmod>2023-12-05T19:09:14.465Z</lastmod>
+    <lastmod>2023-12-21T10:12:18.097Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-11-23/index.html</loc>
+    <lastmod>2023-12-21T10:12:17.485Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/index.html</loc>
+    <lastmod>2023-12-21T10:12:15.465Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-05-25/index.html</loc>
+    <lastmod>2023-12-21T10:12:16.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-06-23/index.html</loc>
+    <lastmod>2023-12-21T10:12:17.785Z</lastmod>
+  </url>
+  <url>
+    <loc>https://steno-aarhus.github.io/epi-stats/sessions/2023-08-31/index.html</loc>
+    <lastmod>2023-12-21T10:12:18.393Z</lastmod>
   </url>
 </urlset>
