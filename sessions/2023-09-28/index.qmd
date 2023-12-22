@@ -27,6 +27,4 @@ references:
 
 Files from session:
 
-- [Slides](slides.pdf)
-
 Articles discussed were [@Dahabreh2023] and [@Hernán2016].
