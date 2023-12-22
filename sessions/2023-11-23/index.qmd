@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Immortal time bias"
 description: "Immortal time bias occurs when person-time is misclassified. As an example, we could discuss the best practice for sampling controls from a register with incident cases."
 date: "2023-11-23"
