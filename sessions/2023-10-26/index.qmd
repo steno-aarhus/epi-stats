@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Directed Acyclic Graphs"
 description: "A conceptual tool to visualize the expected causal relations - may be used to guide the analysis of observational studies"
 date: "2023-10-26"
@@ -29,3 +28,9 @@ references:
   title: 'Use of directed acyclic graphs (DAGs) to identify confounders in applied health research: review and recommendations'
   DOI: 10.1093/ije/dyaa213
 ---
+
+Files from session:
+
+- [Slides](slides.pdf)
+
+Articles discussed were [@Digitale2022] and [@TennantKellyn2021].
