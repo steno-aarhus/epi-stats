@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Transportability"
 description: "The theme for this week is 'Transportality,' focusing on extending inferences from a trial to the target population."
 date: "2023-09-28"
@@ -25,5 +24,9 @@ references:
   title: 'Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available'
   DOI: 10.1093/aje/kwv254
 ---
+
+Files from session:
+
+- [Slides](slides.pdf)
 
 Articles discussed were [@Dahabreh2023] and [@Hernán2016].
