@@ -27,5 +27,8 @@ references:
   DOI: 10.1214/20-STS778
 ---
 
+Files from session:
+
+- [Slides](slides.pdf)
 
 Articles discussed were [@Cox1964] and [@Atkinson2021].
