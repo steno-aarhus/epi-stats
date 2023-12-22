@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Selection bias"
 description: "When potential participants in a study do not participate, estimates of interest may become biased"
 date: "2023-11-09"
@@ -26,3 +25,5 @@ references:
 Files from session:
 
 - [Slides](slides.pdf)
+
+Articles discussed were [@Banack2019] and [@Smith2020].
