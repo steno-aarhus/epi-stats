@@ -1,24 +1,32 @@
 ---
 title: "Immortal time bias"
-description: ""
+description: "Immortal time bias occurs when person-time is misclassified. As an example, we could discuss the best practice for sampling controls from a register with incident cases."
 date: "2023-11-23"
 references:
 - type: article-journal
-  id: Platt2019
+  id: PlattHutcheon2019
   author:
   - family: Platt
     given: R. W.
   - family: Hutcheon
-    given: J.A.
-  - family: Suissa
-    given: S.
+    given: J. A.
   issued: 2019
   title: 'Immortal Time Bias in Epidemiology'
   DOI: 10.1007/s40471-019-0180-5
+- type: article-journal
+  id: LévesqueHanley2010
+  author:
+  - family: Lévesque
+    given: Linda E
+  - family: Hanley
+    given: James A.
+  issued: 2010
+  title: 'Problem of immortal time bias in cohort studies: example using statins for preventing progression of diabetes'
+  DOI: 10.1136/bmj.b5087
 ---
 
-Files for this session:
+Files from session:
 
 - [Slides](slides.pdf)
 
-Articles we discussed were [@Platt2019].
+Articles discussed were [@PlattHutcheon2019] and [@LévesqueHanley2010].

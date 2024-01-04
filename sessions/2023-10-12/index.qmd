@@ -1,18 +1,30 @@
 ---
-draft: true
 title: "Target trials and case-control studies"
-description: ""
+description: "This week's topics include 'Target trial and case-control studies as a Target trial'. The meeting was unfortunately canceled, where the following was supposed to be discussed: Strengthening Causal Inference from Observational Data - Can we meaningfully emulate a target trial using case-control data to reduce discrepancies between observational and randomized trial evidence. The meeting was unfortunately canceled"
 date: "2023-10-12"
 references:
 - type: article-journal
-  id: WatsonCrick1953
+  id: Hernán2021
   author:
-  - family: Watson
-    given: J. D.
-  - family: Crick
-    given: F. H. C.
-  issued: 1953
-  title: 'Molecular structure of nucleic acids: a structure for
-    deoxyribose nucleic acid'
-  DOI: 10.1038/171737a0
+  - family: Hernán
+    given: Miguel A 
+  issued: 2021
+  title: 'Methods of Public Health Research - Strengthening Causal Inference from Observational Data'
+  DOI: 10.1056/NEJMp2113319
+- type: article-journal
+  id: DickermanGarcía-Albéniz2020
+  author:
+  - family: Dickerman
+    given: Barbra A
+  - family: García-Albéniz
+    given: Xabier
+  issued: 2020
+  title: 'Emulating a target trial in case-control designs: an application to statins and colorectal cancer'
+  DOI: 10.1093/ije/dyaa144
 ---
+
+Files from session:
+
+- [Slides](slides.pdf)
+
+Articles discussed were [@Hernán2021] and [@DickermanGarcía-Albéniz2020].

@@ -1,18 +1,36 @@
 ---
-draft: true
 title: "Directed Acyclic Graphs"
-description: ""
+description: "A conceptual tool to visualize the expected causal relations - may be used to guide the analysis of observational studies"
 date: "2023-10-26"
 references:
 - type: article-journal
-  id: WatsonCrick1953
+  id: Digitale2022
   author:
-  - family: Watson
-    given: J. D.
-  - family: Crick
-    given: F. H. C.
-  issued: 1953
-  title: 'Molecular structure of nucleic acids: a structure for
-    deoxyribose nucleic acid'
-  DOI: 10.1038/171737a0
+  - family: Digitale
+    given: Jean C.
+  - family: Martin
+    given: Jeffrey N.
+  - family: Glymour
+    given: Medellena Maria
+  issued: 2022
+  title: 'Tutorial on directed acyclic graphs'
+  DOI: 10.1016/j.jclinepi.2021.08.001
+- type: article-journal
+  id: TennantKellyn2021
+  author:
+  - family: Tennant
+    given: Peter W. G.
+  - family: Arnold
+    given: Kellyn F. 
+  - family: Murray
+    given: Eleanor J. 
+  issued: 2021
+  title: 'Use of directed acyclic graphs (DAGs) to identify confounders in applied health research: review and recommendations'
+  DOI: 10.1093/ije/dyaa213
 ---
+
+Files from session:
+
+- [Slides](slides.pdf)
+
+Articles discussed were [@Digitale2022] and [@TennantKellyn2021].

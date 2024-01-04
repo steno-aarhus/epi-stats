@@ -1,18 +1,30 @@
 ---
-draft: true
 title: "Transportability"
-description: ""
+description: "The theme for this week is 'Transportality,' focusing on extending inferences from a trial to the target population."
 date: "2023-09-28"
 references:
 - type: article-journal
-  id: WatsonCrick1953
+  id: Dahabreh2023
   author:
-  - family: Watson
-    given: J. D.
-  - family: Crick
-    given: F. H. C.
-  issued: 1953
-  title: 'Molecular structure of nucleic acids: a structure for
-    deoxyribose nucleic acid'
-  DOI: 10.1038/171737a0
+  - family: Dahabreh
+    given: Issa J.
+  - family: Matthews
+    given: Anthony
+  issued: 2023
+  title: 'Using Trial and Observational Data to Assess Effectiveness: Trial Emulation, Transportability, Benchmarking, and Joint Analysis'
+  DOI: 10.1093/epirev/mxac011
+- type: article-journal
+  id: Hernán2016
+  author:
+  - family: Hernán
+    given: Miguel A.
+  - family: Robins
+    given: James M.
+  issued: 2016
+  title: 'Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available'
+  DOI: 10.1093/aje/kwv254
 ---
+
+Files from session:
+
+Articles discussed were [@Dahabreh2023] and [@Hernán2016].
