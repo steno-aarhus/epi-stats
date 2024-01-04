@@ -24,6 +24,7 @@ references:
   title: 'Problem of immortal time bias in cohort studies: example using statins for preventing progression of diabetes'
   DOI: 10.1136/bmj.b5087
 ---
+
 Files from session:
 
 - [Slides](slides.pdf)
