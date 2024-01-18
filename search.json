@@ -21,25 +21,11 @@
     "text": "Files from session:\n\nSlides\n\nArticles discussed were (Platt and Hutcheon 2019) and (Lévesque and Hanley 2010).\n\n\n\n\nReferences\n\nLévesque, Linda E, and James A. Hanley. 2010. “Problem of Immortal Time Bias in Cohort Studies: Example Using Statins for Preventing Progression of Diabetes.” https://doi.org/10.1136/bmj.b5087.\n\n\nPlatt, R. W., and J. A. Hutcheon. 2019. “Immortal Time Bias in Epidemiology.” https://doi.org/10.1007/s40471-019-0180-5."
   },
   {
-    "objectID": "sessions/2023-11-09/index.html",
-    "href": "sessions/2023-11-09/index.html",
-    "title": "Selection bias",
+    "objectID": "sessions/2023-05-25/index.html",
+    "href": "sessions/2023-05-25/index.html",
+    "title": "Introduction to GitHub",
     "section": "",
-    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Banack and Kaufman 2019) and (Smith, n.d.).\n\n\n\n\nReferences\n\nBanack, Hailey R., and Jay S. Kaufman. 2019. “Investigating and Remediating Selection Bias in Geriatrics Research: The Selection Bias Toolkit.” https://doi.org/10.1111/jgs.16022.\n\n\nSmith, Louisa. n.d. “Selection Mechanisms and Their Consequences: Understanding and Addressing Selection Bias.” https://doi.org/10.1007/s40471-020-00241-6."
-  },
-  {
-    "objectID": "sessions/2023-10-26/index.html",
-    "href": "sessions/2023-10-26/index.html",
-    "title": "Directed Acyclic Graphs",
-    "section": "",
-    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Digitale, Martin, and Glymour 2022) and (Tennant, Arnold, and Murray 2021).\n\n\n\n\nReferences\n\nDigitale, Jean C., Jeffrey N. Martin, and Medellena Maria Glymour. 2022. “Tutorial on Directed Acyclic Graphs.” https://doi.org/10.1016/j.jclinepi.2021.08.001.\n\n\nTennant, Peter W. G., Kellyn F. Arnold, and Eleanor J. Murray. 2021. “Use of Directed Acyclic Graphs (DAGs) to Identify Confounders in Applied Health Research: Review and Recommendations.” https://doi.org/10.1093/ije/dyaa213."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Steno Aarhus Epidemiology and Statistics",
-    "section": "",
-    "text": "Immortal time bias\n\n\n\n\n\n\n\n\n\nNov 23, 2023\n\n\n\n\n\n\n\n\nSelection bias\n\n\n\n\n\n\n\n\n\nNov 9, 2023\n\n\n\n\n\n\n\n\nDirected Acyclic Graphs\n\n\n\n\n\n\n\n\n\nOct 26, 2023\n\n\n\n\n\n\n\n\nTarget trials and case-control studies\n\n\n\n\n\n\n\n\n\nOct 12, 2023\n\n\n\n\n\n\n\n\nTransportability\n\n\n\n\n\n\n\n\n\nSep 28, 2023\n\n\n\n\n\n\n\n\nBox Cox transformation.\n\n\n\n\n\n\n\n\n\nSep 14, 2023\n\n\n\n\n\n\n\n\nAnalysis of change from baseline and/or ANCOVA?\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\n\n\n\n\n\n\nEffect modification in epidemiologic studies – a template for analysis\n\n\n\n\n\n\n\n\n\nJun 23, 2023\n\n\n\n\n\n\n\n\nIntroduction to GitHub\n\n\n\n\n\n\n\n\n\nMay 25, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Available here."
   },
   {
     "objectID": "sessions/2023-09-28/index.html",
@@ -49,11 +35,25 @@
     "text": "Files from session:\nArticles discussed were (Dahabreh and Matthews 2023) and (Hernán and Robins 2016).\n\n\n\n\nReferences\n\nDahabreh, Issa J., and Anthony Matthews. 2023. “Using Trial and Observational Data to Assess Effectiveness: Trial Emulation, Transportability, Benchmarking, and Joint Analysis.” https://doi.org/10.1093/epirev/mxac011.\n\n\nHernán, Miguel A., and James M. Robins. 2016. “Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available.” https://doi.org/10.1093/aje/kwv254."
   },
   {
-    "objectID": "sessions/2023-05-25/index.html",
-    "href": "sessions/2023-05-25/index.html",
-    "title": "Introduction to GitHub",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Steno Aarhus Epidemiology and Statistics",
     "section": "",
-    "text": "Available here."
+    "text": "Immortal time bias\n\n\n\n\n\n\n\n\n\nNov 23, 2023\n\n\n\n\n\n\n\n\nSelection bias\n\n\n\n\n\n\n\n\n\nNov 9, 2023\n\n\n\n\n\n\n\n\nDirected Acyclic Graphs\n\n\n\n\n\n\n\n\n\nOct 26, 2023\n\n\n\n\n\n\n\n\nTarget trials and case-control studies\n\n\n\n\n\n\n\n\n\nOct 12, 2023\n\n\n\n\n\n\n\n\nTransportability\n\n\n\n\n\n\n\n\n\nSep 28, 2023\n\n\n\n\n\n\n\n\nBox Cox transformation.\n\n\n\n\n\n\n\n\n\nSep 14, 2023\n\n\n\n\n\n\n\n\nAnalysis of change from baseline and/or ANCOVA?\n\n\n\n\n\n\n\n\n\nAug 31, 2023\n\n\n\n\n\n\n\n\nEffect modification in epidemiologic studies – a template for analysis\n\n\n\n\n\n\n\n\n\nJun 23, 2023\n\n\n\n\n\n\n\n\nIntroduction to GitHub\n\n\n\n\n\n\n\n\n\nMay 25, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "sessions/2023-10-26/index.html",
+    "href": "sessions/2023-10-26/index.html",
+    "title": "Directed Acyclic Graphs",
+    "section": "",
+    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Digitale, Martin, and Glymour 2022) and (Tennant, Arnold, and Murray 2021).\n\n\n\n\nReferences\n\nDigitale, Jean C., Jeffrey N. Martin, and Medellena Maria Glymour. 2022. “Tutorial on Directed Acyclic Graphs.” https://doi.org/10.1016/j.jclinepi.2021.08.001.\n\n\nTennant, Peter W. G., Kellyn F. Arnold, and Eleanor J. Murray. 2021. “Use of Directed Acyclic Graphs (DAGs) to Identify Confounders in Applied Health Research: Review and Recommendations.” https://doi.org/10.1093/ije/dyaa213."
+  },
+  {
+    "objectID": "sessions/2023-11-09/index.html",
+    "href": "sessions/2023-11-09/index.html",
+    "title": "Selection bias",
+    "section": "",
+    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Banack and Kaufman 2019) and (Smith, n.d.).\n\n\n\n\nReferences\n\nBanack, Hailey R., and Jay S. Kaufman. 2019. “Investigating and Remediating Selection Bias in Geriatrics Research: The Selection Bias Toolkit.” https://doi.org/10.1111/jgs.16022.\n\n\nSmith, Louisa. n.d. “Selection Mechanisms and Their Consequences: Understanding and Addressing Selection Bias.” https://doi.org/10.1007/s40471-020-00241-6."
   },
   {
     "objectID": "sessions/2023-10-12/index.html",
