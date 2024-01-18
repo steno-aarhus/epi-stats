@@ -1,1 +1,43 @@
+---
+title: "N-of-1 designs and Case-crossover designs"
+description: "Using the case person as his or hers own control (Asking: when exposed instead of who was exposed)
+Discuss the application of the N-of-1 design to personalized treatment studies"
+date: "2024-01-18"
+references:
+- type: article-journal
+  id: Lewer2022
+  author:
+  - family: Lewer
+    given: Dan
+  - family: Petersen
+    given: Irene
+  - family: Maclure
+    given: Malcolm
+  issued: 2022
+  title: 'The case-crossover design for studying sudden events'
+  DOI: 10.1136/bmjmed-2022-000214
+- type: article-journal
+  id: XieYu2017
+  author:
+  - family: Xie
+    given: Tailiang
+  - family: Yu
+    given: Zhuoxin
+  issued: 2017
+  title: 'N-of-1 Design and Its Applications to Personalized Treatment Studiess'
+  DOI: 0.1007/s12561-016-9165-9
+- type: article-journal
+  id: Senn2018
+  author:
+  - family: Senn
+    given: Stephen
+  issued: 2018
+  title: 'Statistical pitfalls of personalized medicine'
+  DOI: 10.1038/d41586-018-07535-2
 
+Files from session:
+
+- [Slides](slides.pdf)
+
+Articles discussed were [@Lewer2022] [@XieYu2017] and [@Senn2018].
+---
