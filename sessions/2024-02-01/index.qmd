@@ -1,17 +1,9 @@
 ---
-title: ""
-description: ""
-date: ""
-references:
-- type: article-journal
-  id: WatsonCrick1953
-  author:
-  - family: Watson
-    given: J. D.
-  - family: Crick
-    given: F. H. C.
-  issued: 1953
-  title: 'Molecular structure of nucleic acids: a structure for
-    deoxyribose nucleic acid'
-  DOI: 10.1038/171737a0
+title: "First Register Space meeting"
+description: "The first Register Space meeting covered an introduction to the upcoming meetings this spring, as well as an overview of the DARTER project and the SDCA project database"
+date: "2024-02-01"
 ---
+
+Files from session:
+
+- [Slides](slides.pdf)
