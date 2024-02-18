@@ -11,3 +11,5 @@ listing:
 For those curious and interested, we have compiled a list of topics for the Epi&Stat meetings throughout the spring. You can find them at the following link:
 
 https://docs.google.com/document/d/1-yOO2sNzuwRsm8Hpy0_wn9BLXrgAdlCju_LeDZ1Li5I/edit?usp=sharing
+
+## Sessions
