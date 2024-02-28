@@ -42,11 +42,11 @@
     "text": "Files from session:\n\nSlides\n\nArticles discussed were (Platt and Hutcheon 2019) and (Lévesque and Hanley 2010).\n\n\n\n\nReferences\n\nLévesque, Linda E, and James A. Hanley. 2010. “Problem of Immortal Time Bias in Cohort Studies: Example Using Statins for Preventing Progression of Diabetes.” https://doi.org/10.1136/bmj.b5087.\n\n\nPlatt, R. W., and J. A. Hutcheon. 2019. “Immortal Time Bias in Epidemiology.” https://doi.org/10.1007/s40471-019-0180-5."
   },
   {
-    "objectID": "sessions/2023-09-14/index.html",
-    "href": "sessions/2023-09-14/index.html",
-    "title": "Box Cox transformation.",
+    "objectID": "sessions/2024-02-22/index.html",
+    "href": "sessions/2024-02-22/index.html",
+    "title": "Power calculations for sample size estimates- traditional and alternative analysis. (e.g. Clustered data)",
     "section": "",
-    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Box and Cox 1964) and (Atkinson, Riani, and Corbellini 2021).\n\n\n\n\nReferences\n\nAtkinson, Anthony C., Marco Riani, and Aldo Corbellini. 2021. “The Box–Cox Transformation: Review and Extensions.” https://doi.org/10.1214/20-STS778.\n\n\nBox, G. E. P., and D. R. Cox. 1964. “An Analysis of Transformations.” https://www.jstor.org/stable/2984418."
+    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Kerry and Bland 1998a) (Kerry and Bland 1998b) and (Tarazona and Conesa 2020).\nThe EpiBasic spreadsheet was used and can be downloaded from: https://ph.medarbejdere.au.dk/undervisning/software\n\n\n\n\nReferences\n\nKerry, S. M., and J. M. Bland. 1998a. “Sample Size in Cluster Randomisation.” https://doi.org/10.1136/bmj.316.7130.549.\n\n\n———. 1998b. “The Intracluster Correlation Coefficient in Cluster Randomisation.” https://doi.org/10.1136/bmj.316.7142.1455.\n\n\nTarazona, Sonia, and Ana Conesa. 2020. “Harmonization of Quality Metrics and Power Calculation in Multi-Omic Studies.” https://doi.org/10.1038/s41467-020-16937-8."
   },
   {
     "objectID": "sessions/2024-01-18/index.html",
@@ -54,6 +54,13 @@
     "title": "N-of-1 designs and Case-crossover designs",
     "section": "",
     "text": "Files from session:\n\nSlides\n\nArticles discussed were (Lewer, Petersen, and Maclure 2022) (Xie and Yu 2017) and (Senn 2018).\n\n\n\n\nReferences\n\nLewer, Dan, Irene Petersen, and Malcolm Maclure. 2022. “The Case-Crossover Design for Studying Sudden Events.” https://doi.org/10.1136/bmjmed-2022-000214.\n\n\nSenn, Stephen. 2018. “Statistical Pitfalls of Personalized Medicine.” https://doi.org/10.1038/d41586-018-07535-2.\n\n\nXie, Tailiang, and Zhuoxin Yu. 2017. “N-of-1 Design and Its Applications to Personalized Treatment Studiess.” https://doi.org/0.1007/s12561-016-9165-9."
+  },
+  {
+    "objectID": "sessions/2023-09-14/index.html",
+    "href": "sessions/2023-09-14/index.html",
+    "title": "Box Cox transformation.",
+    "section": "",
+    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Box and Cox 1964) and (Atkinson, Riani, and Corbellini 2021).\n\n\n\n\nReferences\n\nAtkinson, Anthony C., Marco Riani, and Aldo Corbellini. 2021. “The Box–Cox Transformation: Review and Extensions.” https://doi.org/10.1214/20-STS778.\n\n\nBox, G. E. P., and D. R. Cox. 1964. “An Analysis of Transformations.” https://www.jstor.org/stable/2984418."
   },
   {
     "objectID": "sessions/2023-11-09/index.html",

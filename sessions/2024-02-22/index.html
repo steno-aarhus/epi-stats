@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-02-22">
+<meta name="description" content="Traditional sample size calculations supporting clinical studies; while also addressing considerations for sample sizes in omics-based cluster/pattern analysis, which depend on multiple variables.">
 
-<title>SDCA Epi Stats - Steno Aarhus Epidemiology and Statistics</title>
+<title>SDCA Epi Stats - Power calculations for sample size estimates- traditional and alternative analysis. (e.g.&nbsp;Clustered data)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +22,44 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,72 +86,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>
 
       .quarto-title-block .quarto-title-banner {
-        background-image: url(site_libs/quarto-contrib/quarto-project/steno-aarhus/sdca-theme/images/banner.png);
+        background-image: url(../../site_libs/quarto-contrib/quarto-project/steno-aarhus/sdca-theme/images/banner.png);
 background-size: cover;
       }
 </style>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -142,14 +104,14 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">SDCA Epi Stats</span>
     </a>
   </div>
         <div class="quarto-navbar-tools tools-wide">
     <a href="https://github.com/steno-aarhus/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
     <a href="https://twitter.com/StenoAarhusRes" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
-    <a href="./directory.html" title="Website Directory" class="quarto-navigation-tool px-1" aria-label="Website Directory"><i class="bi bi-globe"></i></a>
+    <a href="../../directory.html" title="Website Directory" class="quarto-navigation-tool px-1" aria-label="Website Directory"><i class="bi bi-globe"></i></a>
 </div>
           <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
@@ -159,14 +121,25 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Steno Aarhus Epidemiology and Statistics</h1>
-                      </div>
+      <h1 class="title">Power calculations for sample size estimates- traditional and alternative analysis. (e.g.&nbsp;Clustered data)</h1>
+                  <div>
+        <div class="description">
+          Traditional sample size calculations supporting clinical studies; while also addressing considerations for sample sizes in omics-based cluster/pattern analysis, which depend on multiple variables.
+        </div>
+      </div>
+                </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 22, 2024</p>
+      </div>
+    </div>
     
       
     </div>
@@ -176,13 +149,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#sessions" id="toc-sessions" class="nav-link active" data-scroll-target="#sessions">Sessions</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/steno-aarhus/epi-stats/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/steno-aarhus/epi-stats/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/steno-aarhus/epi-stats/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -191,209 +158,27 @@ window.Quarto = {
 
 
 
-<p>For those curious and interested, we have compiled a list of topics for the Epi&amp;Stat meetings throughout the spring. You can find them at the following link:</p>
-<p>https://docs.google.com/document/d/1-yOO2sNzuwRsm8Hpy0_wn9BLXrgAdlCju_LeDZ1Li5I/edit?usp=sharing</p>
-<section id="sessions" class="level2">
-<h2 class="anchored" data-anchor-id="sessions">Sessions</h2>
+<p>Files from session:</p>
+<ul>
+<li><a href="slides.pdf">Slides</a></li>
+</ul>
+<p>Articles discussed were <span class="citation" data-cites="KerryBland1998">(<a href="#ref-KerryBland1998" role="doc-biblioref">Kerry and Bland 1998a</a>)</span> <span class="citation" data-cites="KerryBland1998_cor">(<a href="#ref-KerryBland1998_cor" role="doc-biblioref">Kerry and Bland 1998b</a>)</span> and <span class="citation" data-cites="TarazonaConesa2020">(<a href="#ref-TarazonaConesa2020" role="doc-biblioref">Tarazona and Conesa 2020</a>)</span>.</p>
+<p>The EpiBasic spreadsheet was used and can be downloaded from: https://ph.medarbejdere.au.dk/undervisning/software</p>
 
 
 
-</section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1708560000000" data-listing-file-modified-sort="1709112260725" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sessions/2024-02-22/index.html" class="no-external">Power calculations for sample size estimates- traditional and alternative analysis. (e.g.&nbsp;Clustered data)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./sessions/2024-02-22/index.html" class="no-external"></a>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-KerryBland1998" class="csl-entry" role="listitem">
+Kerry, S. M., and J. M. Bland. 1998a. <span>“Sample Size in Cluster Randomisation.”</span> <a href="https://doi.org/10.1136/bmj.316.7130.549">https://doi.org/10.1136/bmj.316.7130.549</a>.
 </div>
+<div id="ref-KerryBland1998_cor" class="csl-entry" role="listitem">
+———. 1998b. <span>“The Intracluster Correlation Coefficient in Cluster Randomisation.”</span> <a href="https://doi.org/10.1136/bmj.316.7142.1455">https://doi.org/10.1136/bmj.316.7142.1455</a>.
 </div>
-<div class="metadata">
-<a href="./sessions/2024-02-22/index.html" class="no-external">
-<div class="listing-date">
-Feb 22, 2024
+<div id="ref-TarazonaConesa2020" class="csl-entry" role="listitem">
+Tarazona, Sonia, and Ana Conesa. 2020. <span>“Harmonization of Quality Metrics and Power Calculation in Multi-Omic Studies.”</span> <a href="https://doi.org/10.1038/s41467-020-16937-8">https://doi.org/10.1038/s41467-020-16937-8</a>.
 </div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1705536000000" data-listing-file-modified-sort="1709112260709" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sessions/2024-01-18/index.html" class="no-external">N-of-1 designs and Case-crossover designs</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./sessions/2024-01-18/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./sessions/2024-01-18/index.html" class="no-external">
-<div class="listing-date">
-Jan 18, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1700697600000" data-listing-file-modified-sort="1709112260701" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sessions/2023-11-23/index.html" class="no-external">Immortal time bias</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./sessions/2023-11-23/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./sessions/2023-11-23/index.html" class="no-external">
-<div class="listing-date">
-Nov 23, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1699488000000" data-listing-file-modified-sort="1709112260693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sessions/2023-11-09/index.html" class="no-external">Selection bias</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./sessions/2023-11-09/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./sessions/2023-11-09/index.html" class="no-external">
-<div class="listing-date">
-Nov 9, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1698278400000" data-listing-file-modified-sort="1709112260681" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sessions/2023-10-26/index.html" class="no-external">Directed Acyclic Graphs</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./sessions/2023-10-26/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./sessions/2023-10-26/index.html" class="no-external">
-<div class="listing-date">
-Oct 26, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1697068800000" data-listing-file-modified-sort="1709112260677" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sessions/2023-10-12/index.html" class="no-external">Target trials and case-control studies</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./sessions/2023-10-12/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./sessions/2023-10-12/index.html" class="no-external">
-<div class="listing-date">
-Oct 12, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1695859200000" data-listing-file-modified-sort="1709112260677" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sessions/2023-09-28/index.html" class="no-external">Transportability</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./sessions/2023-09-28/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./sessions/2023-09-28/index.html" class="no-external">
-<div class="listing-date">
-Sep 28, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1694649600000" data-listing-file-modified-sort="1709112260665" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sessions/2023-09-14/index.html" class="no-external">Box Cox transformation.</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./sessions/2023-09-14/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./sessions/2023-09-14/index.html" class="no-external">
-<div class="listing-date">
-Sep 14, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1693440000000" data-listing-file-modified-sort="1709112260657" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sessions/2023-08-31/index.html" class="no-external">Analysis of change from baseline and/or ANCOVA?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./sessions/2023-08-31/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./sessions/2023-08-31/index.html" class="no-external">
-<div class="listing-date">
-Aug 31, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1687478400000" data-listing-file-modified-sort="1709112260633" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sessions/2023-06-23/index.html" class="no-external">Effect modification in epidemiologic studies – a template for analysis</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./sessions/2023-06-23/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./sessions/2023-06-23/index.html" class="no-external">
-<div class="listing-date">
-Jun 23, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1684972800000" data-listing-file-modified-sort="1709112260625" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./sessions/2023-05-25/index.html" class="no-external">Introduction to GitHub</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./sessions/2023-05-25/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./sessions/2023-05-25/index.html" class="no-external">
-<div class="listing-date">
-May 25, 2023
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -805,7 +590,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/steno-aarhus/epi-stats/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/steno-aarhus/epi-stats/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/steno-aarhus/epi-stats/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/steno-aarhus/epi-stats/edit/main/sessions/2024-02-22/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/steno-aarhus/epi-stats/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/steno-aarhus/epi-stats/blob/main/sessions/2024-02-22/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
