@@ -17,7 +17,7 @@ references:
 
 Files from session:
 
-- [Slides](slides.pdf)
-- [teaching_code](teaching_code.R)
+- [Slides](survival1_HS_240919.pdf)
+- [teaching_code](surv_example.R)
 
 Article discussed were [@DahabrehHernán2022] 
