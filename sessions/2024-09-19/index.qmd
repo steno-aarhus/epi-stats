@@ -1,0 +1,23 @@
+---
+title: "Transportability"
+description: "This session serves as a condensed course on Transportability and Target populations, with hands-on application utilizing the R programming language"
+date: "2024-03-14"
+references:
+- type: article-journal
+  id: DahabrehHernán2022
+  author:
+  - family:  Dahabreh
+    given: Issa J
+  - family: Hernán
+    given: Miguel A 
+  issued: 2020
+  title: 'Study Designs for Extending Causal Inferences From a Randomized Trial to a Target Population'
+  DOI: 10.1093/aje/kwaa270
+---
+
+Files from session:
+
+- [Slides](slides.pdf)
+- [teaching_code](teaching_code.R)
+
+Article discussed were [@DahabrehHernán2022] 
