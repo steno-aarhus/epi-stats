@@ -1,7 +1,7 @@
 ---
-title: "Transportability"
-description: "This session serves as a condensed course on Transportability and Target populations, with hands-on application utilizing the R programming language"
-date: "2024-03-14"
+title: "Fundamentals of time to event analysis"
+description: "Fundamentals of time to event analysis - Lexis-diagram, choice of time scale, Definition of key concepts: Censoring, Competing Risks, Kaplan-Meier, Cumulative Incidence (with competing risks)"
+date: "2024-09-19"
 references:
 - type: article-journal
   id: DahabrehHernán2022
@@ -12,7 +12,7 @@ references:
     given: Miguel A 
   issued: 2020
   title: 'Study Designs for Extending Causal Inferences From a Randomized Trial to a Target Population'
-  DOI: 10.1093/aje/kwaa270
+  DOI:10.1213/ANE.0000000000003653
 ---
 
 Files from session:
