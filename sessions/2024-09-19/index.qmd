@@ -4,14 +4,14 @@ description: "Fundamentals of time to event analysis - Lexis-diagram, choice of 
 date: "2024-09-19"
 references:
 - type: article-journal
-  id: DahabrehHernán2022
+  id: SchoberVetter2018
   author:
-  - family:  Dahabreh
-    given: Issa J
-  - family: Hernán
-    given: Miguel A 
-  issued: 2020
-  title: 'Study Designs for Extending Causal Inferences From a Randomized Trial to a Target Population'
+  - family:  Schober
+    given: Patrick
+  - family: Vetter
+    given: Thomas R 
+  issued: 2018
+  title: 'Survival Analysis and Interpretation of Time-to-Event Data: The Tortoise and the Hare'
   DOI:10.1213/ANE.0000000000003653
 ---
 
@@ -20,4 +20,4 @@ Files from session:
 - [Slides](survival1_HS_240919.pdf)
 - [teaching_code](surv_example.R)
 
-Article discussed were [@DahabrehHernán2022] 
+Article discussed were [@SchoberVetter2018] 
