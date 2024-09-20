@@ -1,6 +1,6 @@
 ---
 title: "Fundamentals of time to event analysis"
-description: "Fundamentals of time to event analysis - Lexis-diagram, choice of time scale, Definition of key concepts: Censoring, Competing Risks, Kaplan-Meier, Cumulative Incidence (with competing risks)"
+description: "Fundamentals of time to event analysis - Lexis-diagram, choice of time scale, as well as definition of key concepts like censoring, competing risks, Kaplan-Meier, cumulative incidence (with competing risks)"
 date: "2024-09-19"
 references:
 - type: article-journal
@@ -12,12 +12,12 @@ references:
     given: Thomas R 
   issued: 2018
   title: 'Survival Analysis and Interpretation of Time-to-Event Data: The Tortoise and the Hare'
-  DOI:10.1213/ANE.0000000000003653
+  DOI: 10.1213/ANE.0000000000003653
 ---
 
 Files from session:
 
-- [Slides](survival1_HS_240919.pdf)
+- [Slides](slides.pdf)
 - [teaching_code](surv_example.R)
 
 Article discussed were [@SchoberVetter2018] 
