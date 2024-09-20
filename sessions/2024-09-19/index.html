@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-02-22">
-<meta name="description" content="Traditional sample size calculations supporting clinical studies; while also addressing considerations for sample sizes in omics-based cluster/pattern analysis, which depend on multiple variables.">
+<meta name="dcterms.date" content="2024-09-19">
+<meta name="description" content="Fundamentals of time to event analysis - Lexis-diagram, choice of time scale, as well as definition of key concepts like censoring, competing risks, Kaplan-Meier, cumulative incidence (with competing risks)">
 
-<title>Power calculations for sample size estimates- traditional and alternative analysis. (e.g.&nbsp;Clustered data) – SDCA Epi Stats</title>
+<title>Fundamentals of time to event analysis – SDCA Epi Stats</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -122,12 +122,12 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Power calculations for sample size estimates- traditional and alternative analysis. (e.g.&nbsp;Clustered data)</h1>
+<h1 class="title">Fundamentals of time to event analysis</h1>
 </div>
 
 <div>
   <div class="description">
-    Traditional sample size calculations supporting clinical studies; while also addressing considerations for sample sizes in omics-based cluster/pattern analysis, which depend on multiple variables.
+    Fundamentals of time to event analysis - Lexis-diagram, choice of time scale, as well as definition of key concepts like censoring, competing risks, Kaplan-Meier, cumulative incidence (with competing risks)
   </div>
 </div>
 
@@ -138,7 +138,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 22, 2024</p>
+      <p class="date">September 19, 2024</p>
     </div>
   </div>
   
@@ -153,22 +153,16 @@ div.csl-indent {
 <p>Files from session:</p>
 <ul>
 <li><a href="slides.pdf">Slides</a></li>
+<li><a href="surv_example.R">teaching_code</a></li>
 </ul>
-<p>Articles discussed were <span class="citation" data-cites="KerryBland1998">(<a href="#ref-KerryBland1998" role="doc-biblioref">Kerry and Bland 1998a</a>)</span> <span class="citation" data-cites="KerryBland1998_cor">(<a href="#ref-KerryBland1998_cor" role="doc-biblioref">Kerry and Bland 1998b</a>)</span> and <span class="citation" data-cites="TarazonaConesa2020">(<a href="#ref-TarazonaConesa2020" role="doc-biblioref">Tarazona and Conesa 2020</a>)</span>.</p>
-<p>The EpiBasic spreadsheet was used and can be downloaded from: https://ph.medarbejdere.au.dk/undervisning/software</p>
+<p>Article discussed were <span class="citation" data-cites="SchoberVetter2018">(<a href="#ref-SchoberVetter2018" role="doc-biblioref">Schober and Vetter 2018</a>)</span></p>
 
 
 
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-KerryBland1998" class="csl-entry" role="listitem">
-Kerry, S. M., and J. M. Bland. 1998a. <span>“Sample Size in Cluster Randomisation.”</span> <a href="https://doi.org/10.1136/bmj.316.7130.549">https://doi.org/10.1136/bmj.316.7130.549</a>.
-</div>
-<div id="ref-KerryBland1998_cor" class="csl-entry" role="listitem">
-———. 1998b. <span>“The Intracluster Correlation Coefficient in Cluster Randomisation.”</span> <a href="https://doi.org/10.1136/bmj.316.7142.1455">https://doi.org/10.1136/bmj.316.7142.1455</a>.
-</div>
-<div id="ref-TarazonaConesa2020" class="csl-entry" role="listitem">
-Tarazona, Sonia, and Ana Conesa. 2020. <span>“Harmonization of Quality Metrics and Power Calculation in Multi-Omic Studies.”</span> <a href="https://doi.org/10.1038/s41467-020-16937-8">https://doi.org/10.1038/s41467-020-16937-8</a>.
+<div id="ref-SchoberVetter2018" class="csl-entry" role="listitem">
+Schober, Patrick, and Thomas R Vetter. 2018. <span>“Survival Analysis and Interpretation of Time-to-Event Data: The Tortoise and the Hare.”</span> <a href="https://doi.org/10.1213/ANE.0000000000003653">https://doi.org/10.1213/ANE.0000000000003653</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -615,7 +609,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/steno-aarhus/epi-stats/edit/main/sessions/2024-02-22/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/steno-aarhus/epi-stats/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/steno-aarhus/epi-stats/blob/main/sessions/2024-02-22/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/steno-aarhus/epi-stats/edit/main/sessions/2024-09-19/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/steno-aarhus/epi-stats/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/steno-aarhus/epi-stats/blob/main/sessions/2024-09-19/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
