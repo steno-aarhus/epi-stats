@@ -1,0 +1,10 @@
+---
+title: "Cox Proportional Hazards"
+description: "Cox proportional hazards regression, simple and time dependent covariates - based on using R"
+date: "2024-10-10"
+---
+
+Files from session:
+
+- [Slides](slides.pdf)
+- [teaching_code](surv_example_CR_CoxPH.R)
