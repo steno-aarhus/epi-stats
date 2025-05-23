@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "directory.html",
+    "href": "directory.html",
+    "title": "Website Directory",
+    "section": "",
+    "text": "These are other websites across Steno Aarhus:\n\nOfficial site: The official Region Midt website for more general public information and details.\nResearch Common Docs: Common documents and operating prodecures for researchers across Steno Aarhus.\nEpidemiology and Statistics: Events and activities related to epidemiology and statistics.\nRegister Research Space: Events and activities related to register-based research.\nInternationalization: Efforts to spread knowledge and connect with other countries, specifically Latin America.\nEpidemiology Group: Documentation for meetings within the epidemiology group.\nCoding Cafe: Schedule for in-person coding support and help."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Steno Aarhus Epidemiology and Statistics",
@@ -12,34 +19,6 @@
     "title": "Steno Aarhus Epidemiology and Statistics",
     "section": "Sessions",
     "text": "Sessions"
-  },
-  {
-    "objectID": "directory.html",
-    "href": "directory.html",
-    "title": "Website Directory",
-    "section": "",
-    "text": "These are other websites across Steno Aarhus:\n\nOfficial site: The official Region Midt website for more general public information and details.\nResearch Common Docs: Common documents and operating prodecures for researchers across Steno Aarhus.\nEpidemiology and Statistics: Events and activities related to epidemiology and statistics.\nRegister Research Space: Events and activities related to register-based research.\nInternationalization: Efforts to spread knowledge and connect with other countries, specifically Latin America.\nEpidemiology Group: Documentation for meetings within the epidemiology group.\nCoding Cafe: Schedule for in-person coding support and help."
-  },
-  {
-    "objectID": "sessions/2024-10-10/index.html",
-    "href": "sessions/2024-10-10/index.html",
-    "title": "Cox Proportional Hazards",
-    "section": "",
-    "text": "Files from session:\n\nSlides\nteaching_code"
-  },
-  {
-    "objectID": "sessions/2023-10-12/index.html",
-    "href": "sessions/2023-10-12/index.html",
-    "title": "Target trials and case-control studies",
-    "section": "",
-    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Hernán 2021) and (Dickerman and García-Albéniz 2020).\n\n\n\n\nReferences\n\nDickerman, Barbra A, and Xabier García-Albéniz. 2020. “Emulating a Target Trial in Case-Control Designs: An Application to Statins and Colorectal Cancer.” https://doi.org/10.1093/ije/dyaa144.\n\n\nHernán, Miguel A. 2021. “Methods of Public Health Research - Strengthening Causal Inference from Observational Data.” https://doi.org/10.1056/NEJMp2113319."
-  },
-  {
-    "objectID": "sessions/2024-03-14/index.html",
-    "href": "sessions/2024-03-14/index.html",
-    "title": "Transportability",
-    "section": "",
-    "text": "Files from session:\n\nSlides\nteaching_code\n\nArticle discussed were (Dahabreh and Hernán 2020)\n\n\n\n\nReferences\n\nDahabreh, Issa J, and Miguel A Hernán. 2020. “Study Designs for Extending Causal Inferences From a Randomized Trial to a Target Population.” https://doi.org/10.1093/aje/kwaa270."
   },
   {
     "objectID": "sessions/2024-09-19/index.html",
@@ -56,25 +35,18 @@
     "text": "Files from session:\n\nSlides\nStata code\nStata output\nData, as .dta or .xlsx\n\nArticles discussed were (Knol and VanderWeele 2012) and (Jensen et al. 2013).\n\n\n\n\nReferences\n\nJensen, L.F, A.F Pedersen, B. Andersen, M. Fenger-Grøn, and P. Vedsted. 2013. “Distance to Screening Site and Non-Participation in Screening for Breast Cancer: A Population-Based Study.” https://doi.org/10.1093/pubmed/fdt068.\n\n\nKnol, Mirjam, and Tyler VanderWeele. 2012. “Recommendations for Presenting Analyses of Effect Modification and Interaction.” https://doi.org/10.1093/ije/dyr218."
   },
   {
-    "objectID": "sessions/2023-11-23/index.html",
-    "href": "sessions/2023-11-23/index.html",
-    "title": "Immortal time bias",
+    "objectID": "sessions/2024-03-14/index.html",
+    "href": "sessions/2024-03-14/index.html",
+    "title": "Transportability",
     "section": "",
-    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Platt and Hutcheon 2019) and (Lévesque and Hanley 2010).\n\n\n\n\nReferences\n\nLévesque, Linda E, and James A. Hanley. 2010. “Problem of Immortal Time Bias in Cohort Studies: Example Using Statins for Preventing Progression of Diabetes.” https://doi.org/10.1136/bmj.b5087.\n\n\nPlatt, R. W., and J. A. Hutcheon. 2019. “Immortal Time Bias in Epidemiology.” https://doi.org/10.1007/s40471-019-0180-5."
+    "text": "Files from session:\n\nSlides\nteaching_code\n\nArticle discussed were (Dahabreh and Hernán 2020)\n\n\n\n\nReferences\n\nDahabreh, Issa J, and Miguel A Hernán. 2020. “Study Designs for Extending Causal Inferences From a Randomized Trial to a Target Population.” https://doi.org/10.1093/aje/kwaa270."
   },
   {
-    "objectID": "sessions/2024-01-18/index.html",
-    "href": "sessions/2024-01-18/index.html",
-    "title": "N-of-1 designs and Case-crossover designs",
+    "objectID": "sessions/2024-02-22/index.html",
+    "href": "sessions/2024-02-22/index.html",
+    "title": "Power calculations for sample size estimates- traditional and alternative analysis. (e.g. Clustered data)",
     "section": "",
-    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Lewer, Petersen, and Maclure 2022) (Xie and Yu 2017) and (Senn 2018).\n\n\n\n\nReferences\n\nLewer, Dan, Irene Petersen, and Malcolm Maclure. 2022. “The Case-Crossover Design for Studying Sudden Events.” https://doi.org/10.1136/bmjmed-2022-000214.\n\n\nSenn, Stephen. 2018. “Statistical Pitfalls of Personalized Medicine.” https://doi.org/10.1038/d41586-018-07535-2.\n\n\nXie, Tailiang, and Zhuoxin Yu. 2017. “N-of-1 Design and Its Applications to Personalized Treatment Studiess.” https://doi.org/0.1007/s12561-016-9165-9."
-  },
-  {
-    "objectID": "sessions/2023-11-09/index.html",
-    "href": "sessions/2023-11-09/index.html",
-    "title": "Selection bias",
-    "section": "",
-    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Banack and Kaufman 2019) and (Smith, n.d.).\n\n\n\n\nReferences\n\nBanack, Hailey R., and Jay S. Kaufman. 2019. “Investigating and Remediating Selection Bias in Geriatrics Research: The Selection Bias Toolkit.” https://doi.org/10.1111/jgs.16022.\n\n\nSmith, Louisa. n.d. “Selection Mechanisms and Their Consequences: Understanding and Addressing Selection Bias.” https://doi.org/10.1007/s40471-020-00241-6."
+    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Kerry and Bland 1998a) (Kerry and Bland 1998b) and (Tarazona and Conesa 2020).\nThe EpiBasic spreadsheet was used and can be downloaded from: https://ph.medarbejdere.au.dk/undervisning/software\n\n\n\n\nReferences\n\nKerry, S. M., and J. M. Bland. 1998a. “Sample Size in Cluster Randomisation.” https://doi.org/10.1136/bmj.316.7130.549.\n\n\n———. 1998b. “The Intracluster Correlation Coefficient in Cluster Randomisation.” https://doi.org/10.1136/bmj.316.7142.1455.\n\n\nTarazona, Sonia, and Ana Conesa. 2020. “Harmonization of Quality Metrics and Power Calculation in Multi-Omic Studies.” https://doi.org/10.1038/s41467-020-16937-8."
   },
   {
     "objectID": "sessions/2023-10-26/index.html",
@@ -84,18 +56,11 @@
     "text": "Files from session:\n\nSlides\n\nArticles discussed were (Digitale, Martin, and Glymour 2022) and (Tennant, Arnold, and Murray 2021).\n\n\n\n\nReferences\n\nDigitale, Jean C., Jeffrey N. Martin, and Medellena Maria Glymour. 2022. “Tutorial on Directed Acyclic Graphs.” https://doi.org/10.1016/j.jclinepi.2021.08.001.\n\n\nTennant, Peter W. G., Kellyn F. Arnold, and Eleanor J. Murray. 2021. “Use of Directed Acyclic Graphs (DAGs) to Identify Confounders in Applied Health Research: Review and Recommendations.” https://doi.org/10.1093/ije/dyaa213."
   },
   {
-    "objectID": "sessions/2023-09-14/index.html",
-    "href": "sessions/2023-09-14/index.html",
-    "title": "Box Cox transformation.",
+    "objectID": "sessions/2023-11-09/index.html",
+    "href": "sessions/2023-11-09/index.html",
+    "title": "Selection bias",
     "section": "",
-    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Box and Cox 1964) and (Atkinson, Riani, and Corbellini 2021).\n\n\n\n\nReferences\n\nAtkinson, Anthony C., Marco Riani, and Aldo Corbellini. 2021. “The Box–Cox Transformation: Review and Extensions.” https://doi.org/10.1214/20-STS778.\n\n\nBox, G. E. P., and D. R. Cox. 1964. “An Analysis of Transformations.” https://www.jstor.org/stable/2984418."
-  },
-  {
-    "objectID": "sessions/2023-05-25/index.html",
-    "href": "sessions/2023-05-25/index.html",
-    "title": "Introduction to GitHub",
-    "section": "",
-    "text": "Available here."
+    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Banack and Kaufman 2019) and (Smith, n.d.).\n\n\n\n\nReferences\n\nBanack, Hailey R., and Jay S. Kaufman. 2019. “Investigating and Remediating Selection Bias in Geriatrics Research: The Selection Bias Toolkit.” https://doi.org/10.1111/jgs.16022.\n\n\nSmith, Louisa. n.d. “Selection Mechanisms and Their Consequences: Understanding and Addressing Selection Bias.” https://doi.org/10.1007/s40471-020-00241-6."
   },
   {
     "objectID": "sessions/2023-09-28/index.html",
@@ -105,6 +70,34 @@
     "text": "Files from session:\nArticles discussed were (Dahabreh and Matthews 2023) and (Hernán and Robins 2016).\n\n\n\n\nReferences\n\nDahabreh, Issa J., and Anthony Matthews. 2023. “Using Trial and Observational Data to Assess Effectiveness: Trial Emulation, Transportability, Benchmarking, and Joint Analysis.” https://doi.org/10.1093/epirev/mxac011.\n\n\nHernán, Miguel A., and James M. Robins. 2016. “Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available.” https://doi.org/10.1093/aje/kwv254."
   },
   {
+    "objectID": "sessions/2023-10-12/index.html",
+    "href": "sessions/2023-10-12/index.html",
+    "title": "Target trials and case-control studies",
+    "section": "",
+    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Hernán 2021) and (Dickerman and García-Albéniz 2020).\n\n\n\n\nReferences\n\nDickerman, Barbra A, and Xabier García-Albéniz. 2020. “Emulating a Target Trial in Case-Control Designs: An Application to Statins and Colorectal Cancer.” https://doi.org/10.1093/ije/dyaa144.\n\n\nHernán, Miguel A. 2021. “Methods of Public Health Research - Strengthening Causal Inference from Observational Data.” https://doi.org/10.1056/NEJMp2113319."
+  },
+  {
+    "objectID": "sessions/2024-10-10/index.html",
+    "href": "sessions/2024-10-10/index.html",
+    "title": "Cox Proportional Hazards",
+    "section": "",
+    "text": "Files from session:\n\nSlides\nteaching_code"
+  },
+  {
+    "objectID": "sessions/2024-01-18/index.html",
+    "href": "sessions/2024-01-18/index.html",
+    "title": "N-of-1 designs and Case-crossover designs",
+    "section": "",
+    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Lewer, Petersen, and Maclure 2022) (Xie and Yu 2017) and (Senn 2018).\n\n\n\n\nReferences\n\nLewer, Dan, Irene Petersen, and Malcolm Maclure. 2022. “The Case-Crossover Design for Studying Sudden Events.” https://doi.org/10.1136/bmjmed-2022-000214.\n\n\nSenn, Stephen. 2018. “Statistical Pitfalls of Personalized Medicine.” https://doi.org/10.1038/d41586-018-07535-2.\n\n\nXie, Tailiang, and Zhuoxin Yu. 2017. “N-of-1 Design and Its Applications to Personalized Treatment Studiess.” https://doi.org/0.1007/s12561-016-9165-9."
+  },
+  {
+    "objectID": "sessions/2023-05-25/index.html",
+    "href": "sessions/2023-05-25/index.html",
+    "title": "Introduction to GitHub",
+    "section": "",
+    "text": "Available here."
+  },
+  {
     "objectID": "sessions/2023-08-31/index.html",
     "href": "sessions/2023-08-31/index.html",
     "title": "Analysis of change from baseline and/or ANCOVA?",
@@ -112,11 +105,18 @@
     "text": "Files from session:\n\nSlides\nStata code\nStata output\n\nArticles discussed were (Wright 2020) and (Senn 2006).\n\n\n\n\nReferences\n\nSenn, Stephen. 2006. “Change from Baseline and Analysis of Covariance Revisited.” https://doi.org/10.1002/sim.2682.\n\n\nWright, Daniel B. 2020. “Allocation to Groups: Examples of Lord’s Paradox.” https://doi.org/10.1111/bjep.12300."
   },
   {
-    "objectID": "sessions/2024-02-22/index.html",
-    "href": "sessions/2024-02-22/index.html",
-    "title": "Power calculations for sample size estimates- traditional and alternative analysis. (e.g. Clustered data)",
+    "objectID": "sessions/2023-11-23/index.html",
+    "href": "sessions/2023-11-23/index.html",
+    "title": "Immortal time bias",
     "section": "",
-    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Kerry and Bland 1998a) (Kerry and Bland 1998b) and (Tarazona and Conesa 2020).\nThe EpiBasic spreadsheet was used and can be downloaded from: https://ph.medarbejdere.au.dk/undervisning/software\n\n\n\n\nReferences\n\nKerry, S. M., and J. M. Bland. 1998a. “Sample Size in Cluster Randomisation.” https://doi.org/10.1136/bmj.316.7130.549.\n\n\n———. 1998b. “The Intracluster Correlation Coefficient in Cluster Randomisation.” https://doi.org/10.1136/bmj.316.7142.1455.\n\n\nTarazona, Sonia, and Ana Conesa. 2020. “Harmonization of Quality Metrics and Power Calculation in Multi-Omic Studies.” https://doi.org/10.1038/s41467-020-16937-8."
+    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Platt and Hutcheon 2019) and (Lévesque and Hanley 2010).\n\n\n\n\nReferences\n\nLévesque, Linda E, and James A. Hanley. 2010. “Problem of Immortal Time Bias in Cohort Studies: Example Using Statins for Preventing Progression of Diabetes.” https://doi.org/10.1136/bmj.b5087.\n\n\nPlatt, R. W., and J. A. Hutcheon. 2019. “Immortal Time Bias in Epidemiology.” https://doi.org/10.1007/s40471-019-0180-5."
+  },
+  {
+    "objectID": "sessions/2023-09-14/index.html",
+    "href": "sessions/2023-09-14/index.html",
+    "title": "Box Cox transformation.",
+    "section": "",
+    "text": "Files from session:\n\nSlides\n\nArticles discussed were (Box and Cox 1964) and (Atkinson, Riani, and Corbellini 2021).\n\n\n\n\nReferences\n\nAtkinson, Anthony C., Marco Riani, and Aldo Corbellini. 2021. “The Box–Cox Transformation: Review and Extensions.” https://doi.org/10.1214/20-STS778.\n\n\nBox, G. E. P., and D. R. Cox. 1964. “An Analysis of Transformations.” https://www.jstor.org/stable/2984418."
   },
   {
     "objectID": "LICENSE.html",
