@@ -12,8 +12,6 @@ website:
         href: "https://github.com/steno-aarhus/"
       - icon: twitter
         href: "https://twitter.com/StenoAarhusRes"
-      - icon: globe
-        href: directory.qmd
 
 format: sdca-theme-html
 
